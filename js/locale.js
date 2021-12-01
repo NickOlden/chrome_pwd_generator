@@ -22,9 +22,9 @@ let LanguageSelector = {
   },
 
   getLocale : function(lang) {
-    if(lang.indexOf('zh')) {
+    if(lang.indexOf('zh') > -1) {
       return this._CHI;
-    } else if(lang.indexOf('ru')) {
+    } else if(lang.indexOf('ru') > -1) {
       return this._RUS;
     } else {
       return this._ENG;
@@ -33,9 +33,9 @@ let LanguageSelector = {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  let locale = LanguageSelector.getLocale(window.navigator.userLanguage || window.navigator.language)
+  let locale = LanguageSelector.getLocale(window.navigator.userLanguage || window.navigator.language);
   document.getElementById("id1_pwd_generator_title").innerHTML = locale.name;
   document.getElementById("id1_pwd_generator").placeholder = locale.input_placeholder;
-  document.getElementById("id1_pwd_button").setAttribute("title", locale.btn_generate_title);
-  document.getElementById("id1_pwd_copy").setAttribute("title", locale.btn_copy_title);
+  document.getElementById("id1_pwd_button").setAttribute("data-bs-original-title", locale.btn_generate_title);
+  document.getElementById("id1_pwd_copy").setAttribute("data-bs-original-title", locale.btn_copy_title);
 });

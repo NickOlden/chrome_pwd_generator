@@ -9,16 +9,17 @@
     <link rel="stylesheet" type="text/css" href="css/popup.css">
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/popup.js"></script>
+    <script type="text/javascript" src="js/locale.js"></script>
 </head>
 <body class="p-4">
 <header>
     <div class="container p-4">
         <div class="row">
             <div class="col-2">
-                <img class="logo-icon" width="30" src="img/logo.png" alt="Генератор паролей"/>
+                <img class="logo-icon" width="30" src="img/logo_30x30.jpg" alt="Password Generator"/>
             </div>
             <div class="col-9">
-                <h4 id="id1_pwd_generator_title">Генератор паролей</h4>
+                <h4 id="id1_pwd_generator_title">Password generator</h4>
             </div>
         </div>
     </div>
@@ -27,14 +28,14 @@
         <div class="row">
             <div class="input-group mb-3">
                 <div class="input-group mb-3">
-                    <input id="id1_pwd_generator"  type="text" class="form-control" placeholder="Пароль" aria-label="Password" aria-describedby="basic-addon2">
+                    <input id="id1_pwd_generator"  type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
                     <div class="input-group-append">
-                        <button id="id1_pwd_button" class="btn btn-primary" data-bs-toggle="tooltip" title="Сгенерировать">
+                        <button id="id1_pwd_button" class="btn btn-primary" data-bs-toggle="tooltip" title="Generate" type="button">
                             <i class="fa fa-plus"></i>
                         </button>
                     </div>
                     <div class="input-group-append">
-                        <button id="id1_pwd_copy" data-bs-toggle="tooltip" title="Копировать..." class="btn btn-outline-secondary" type="button">
+                        <button id="id1_pwd_copy" class="btn btn-outline-secondary" data-bs-toggle="tooltip" title="Copy..." type="button">
                             <i class="fa fa-copy"></i>
                         </button>
                     </div>
@@ -43,7 +44,6 @@
         </div>
     </div>
 <footer>
-
 </footer>
 </body>
 </html>
